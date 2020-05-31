@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t;
+	
+	cin>>t;
+	while(t--)
+	{
+	    string s;
+	  cin>>s;
+	  long long int len=s.length(),sum=0,i;
+	    for(i=0;i<len;i++)
+	    {
+	        if(isdigit(s[i]))
+	        sum+=s[i]-'0';
+	    }
+	    cout<<sum<<"\n";
+	}
+	return 0;
+}
